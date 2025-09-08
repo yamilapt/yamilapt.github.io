@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamila Lujan - Contabilista Certificada</title>
+  <style>
+    /* Variáveis para fácil manutenção */
+    :root {
+      --cor-primaria: #1d2b53;   /* Azul escuro */
+      --cor-secundaria: #66b3ff; /* Azul claro */
+      --cor-fundo: #ffffff;
+      --cor-texto: #333333;
+      --cor-footer: #f2f2f2;
+      --padding-padrao: 20px;
+      --radius-padrao: 8px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--cor-primaria);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--padding-padrao);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--cor-secundaria);
+    }
+
+    section {
+      padding: var(--padding-padrao);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--cor-primaria);
+    }
+
+    .servicos ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .servicos ul li {
+      background: var(--cor-secundaria);
+      color: white;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: var(--radius-padrao);
+    }
+
+    form {
+      background: var(--cor-footer);
+      padding: var(--padding-padrao);
+      border-radius: var(--radius-padrao);
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: var(--radius-padrao);
+    }
+
+    form button {
+      background: var(--cor-primaria);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: var(--cor-secundaria);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: var(--radius-padrao);
+      margin-top: 20px;
+    }
+
+    footer {
+      background: var(--cor-primaria);
+      color: white;
+      text-align: center;
+      padding: var(--padding-padrao);
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: var(--cor-secundaria);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background: var(--cor-primaria);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Yamila Lujan Logo">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Bem-vindo à Yamila Lujan</h1>
+    <p>Contabilista Certificada em Portugal, oferecendo soluções completas em contabilidade, fiscalidade e serviços administrativos.</p>
+  </section>
+
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>
+      A Yamila Lujan é Contabilista Certificada, especializada em gestão e organização da contabilidade, 
+      assinatura de declarações fiscais e contas, garantindo a veracidade e regularidade técnica e fiscal.
+    </p>
+    <ul>
+      <li><strong>Organização da Contabilidade:</strong> assegurando registos claros e fiéis.</li>
+      <li><strong>Assinatura de Declarações:</strong> certificando a veracidade e conformidade legal.</li>
+      <li><strong>Garantia Técnica:</strong> cumprimento das normas e prazos legais.</li>
+      <li><strong>Dever de Veracidade:</strong> responsabilidade total sobre as informações fiscais.</li>
+    </ul>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Abertura e Encerramento de Atividade</li>
+      <li>IRS e IVA</li>
+      <li>Contabilidade para ENI / Trabalhadores Independentes</li>
+      <li>Serviços Gerais de Documentação</li>
+      <li>Apoio em Faturas e Recibos</li>
+      <li>Legalização de Estrangeiros – Finanças e Segurança Social</li>
+      <li>Serviços Administrativos ligados a Trâmites Médicos (atestados, cartas de condução, carta de caçador)</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato">
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110!2d-9.139!3d38.716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMzjCsDQyJzU3LjYiTiA5wrAwOCcyMC4wIlc!5e0!3m2!1spt!2spt!4v0000000000000" 
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Yamila Lujan - Contabilista Certificada</p>
+    <a href="#home">Home</a> | 
+    <a href="#">DMCA</a>
+  </footer>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+
+    // Validação simples do formulário
+    document.getElementById("form-contato").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Mensagem enviada com sucesso!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
